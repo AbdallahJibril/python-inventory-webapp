@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="form-container">
+  <form action="/type_N_P_Q" method="post" class="product-form">
+
+    <label class="form-field">
+      <span>الكمية الجديدة</span>
+      <input type="number" name="new_quantity" min="1" required>
+    </label>
+
+    <button type="submit">التالي</button>
+  </form>
+</div>
+{% endblock %}

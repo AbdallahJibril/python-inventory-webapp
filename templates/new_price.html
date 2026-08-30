@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="form-container">
+  <form action="/type_N_P_Q" method="post" class="product-form">
+
+    <label class="form-field">
+      <span>السعر الجديد</span>
+      <input type="number" name="new_price" min="0" step="0.01"  required>
+    </label>
+
+    <button type="submit">التالي</button>
+  </form>
+</div>
+{% endblock %}

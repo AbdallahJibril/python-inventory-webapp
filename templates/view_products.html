@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<div class="table-container">
+  <table class="custom-table">
+    <caption>قائمة المنتجات</caption>
+
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>المنتج</th>
+        <th>السعر</th>
+        <th>الكمية</th>
+        <th>مجموع سعر الكميات</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      {% for uu in view_file %}
+        <tr>
+          <td>{{ uu.ID }}</td>
+          <td>{{ uu.product }}</td>
+          <td class="num">{{ uu.price }}</td>
+          <td class="num">{{ uu.quantity }}</td>
+          <td class="num">{{ uu.total }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+{% endblock %}

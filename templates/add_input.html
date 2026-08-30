@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="form-container">
+  <h2>إضافة منتج</h2>
+
+  <form action="/add" method="post" class="product-form">
+
+    <label class="form-field">
+      <span>اسم المنتج</span>
+      <input type="text" name="name" required>
+    </label>
+
+    <label class="form-field">
+      <span>سعر المنتج</span>
+      <input type="number" name="price" min="0" step="0.01" required>
+    </label>
+
+    <label class="form-field">
+      <span>كمية المنتج</span>
+      <input type="number" name="quantity" min="1" required>
+    </label>
+
+    <button type="submit">إضافة</button>
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="form-container">
+  <h2>نوع التعديل</h2>
+
+  <form action="/types_update" method="post" class="product-form">
+    <div class="product-form2">
+      {% for i in type_update %}
+        <label class="radio-item">
+          <input type="radio" name="update_type" value="{{ i }}" required onchange="this.form.submit()">
+          <span>{{ i }}</span>
+        </label>
+      {% endfor %}
+    </div>
+
+    <!-- <button type="submit">التالي</button> -->
+  </form>
+</div>
+{% endblock %}

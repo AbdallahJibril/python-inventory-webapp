@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="form-container">
+  <h2>اسم المنتج يتحذف</h2>
+
+  <form action="/Delete" method="post" class="product-form">
+    <div class="product-form2">
+      {% for i in names_products %}
+        <label class="radio-item">
+          <input type="radio" name="name_D" value="{{ i }}" required ><!--onchange="this.form.submit()"-->
+          <span>{{ i }}</span>
+        </label>
+      {% endfor %}
+    </div>
+
+    <button type="submit">التالي</button>
+  </form>
+</div>
+{% endblock %}

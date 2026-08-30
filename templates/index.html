@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="form-container">
+  <form action="/inputs" method="post" class="product-form">
+    <div class="product-form2">
+      {% for i in Choose %}
+        <label class="radio-item">
+          <input type="radio" name="choice" value="{{ i }}" onchange="this.form.submit()" required>
+          <span>{{ i }}</span>
+        </label>
+      {% endfor %}
+    </div>
+  </form>
+</div>
+{% endblock %}
