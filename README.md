@@ -24,7 +24,7 @@ This repository contains the second version of the product and bill management s
 
 ## Installation and Setup
 1. Clone the repository and switch to the web branch:
-   git clone <repository-url>
+   git clone <https://github.com/AbdallahJibril/python-inventory-webapp.git>
    git checkout web-version
 
 2. Install the required dependencies (Flask and Pandas):
