@@ -20,7 +20,7 @@ This repository contains the first version of the product and bill management sy
 
 ## Installation and Setup
 1. Clone the repository and switch to the main branch:
-   git clone <repository-url>
+   git clone <https://github.com/AbdallahJibril/python-inventory-webapp.git>
    git checkout main
 
 2. Install the required dependencies (Pandas):
